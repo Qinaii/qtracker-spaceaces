@@ -1,98 +1,73 @@
 # qTracker - Space Aces
 
-HUD stat tracker for Space Aces. Reads on-screen HUD values via OCR. No memory access, no injection, no game files modified.
+HUD and session tracker for Space Aces. Reads your pilot stats from the **official Space Aces** while you play. No screen OCR, no memory access, no injection, no game files modified.
 
 Made by **[Qinaii Labs](https://qinaii.de)**
 
 [![Releases](https://img.shields.io/github/v/release/Qinaii/qtracker-spaceaces?label=latest)](https://github.com/Qinaii/qtracker-spaceaces/releases)
 
-**Pre-release.** Expect rough edges. Feedback welcome via [Issues](https://github.com/Qinaii/qtracker-spaceaces/issues).
-
 ## Download
 
-**[Latest release](https://github.com/Qinaii/qtracker-spaceaces/releases/latest)** · Windows 10/11 · `qtracker_v0.0.5-alpha.exe`
+**[Latest release](https://github.com/Qinaii/qtracker-spaceaces/releases/latest)** · Windows 10/11 · `qtracker_v1.0.0.exe`
 
-Tesseract OCR is bundled. No separate install needed for the release build.
+No Tesseract or extra OCR install. Space Aces must be running and logged in so qTracker can read your session token.
 
 ## Quick start
 
-1. Download and run `qtracker_v0.0.5-alpha.exe` from Releases
-2. Open **Settings**
-3. Click **Calibrate** on **Uridium** and draw a box around the **icon and full number**
-4. Check the OCR readout (`OK. Check against game.`). Adjust the box if needed
-5. Calibrate **EP**, **Credits**, and **Honor** for the full dashboard and analytics
-6. Click **Scan All** (qTracker minimizes briefly so the game HUD stays visible)
-7. Open **Dashboard** and click **Start** to begin session tracking
+1. Download and run `qtracker_v1.0.0.exe` from Releases
+2. Start **Space Aces** and log in
+3. Open **Dashboard** and click **Start** to begin session tracking
+4. Optional: open **Overlay** and click **Activate Overlay** for an always-on-top HUD
+5. Optional: in **Settings**, enable **Start qTracker when Space Aces launches**
 
-**Tip:** EP and Credits need wider boxes than Uridium. Include every digit and the thousands dots.
-
-If reads are unstable, check **Settings → OCR tips** (e.g. Map Background off, Window Background on in game).
+If status shows **Error**, click **Retry** after Space Aces is logged in.
 
 ## Features
 
 | Area | What you get |
 |------|----------------|
-| **Dashboard** | Live values, net session Uri (farming minus shop spend), Uri/h, farming goal with ETA |
-| **Overlay** | Always-on-top logo + stats; click-through rows, drag logo, right-click menu |
-| **Analytics** | Daily, weekly, monthly charts (after all four stats are calibrated) |
-| **Settings** | Per-stat calibration, Scan All, OCR tips, debug snapshots |
-| **Session** | Start sets baseline; Uri session can go negative after shop purchases; Pause pauses tracking; Reset Hud clears session counters |
+| **Dashboard** | Account (pilot, level, rank, ship), live Uri/EP/Credits/Honor, session deltas, Uri/h, farming goal with ETA |
+| **Overlay** | Always-on-top logo + stats panel with icons; click-through rows; drag logo; right-click menu; height shrinks when rows are off |
+| **Analytics** | Daily / weekly / monthly charts for Uri, EP, Credits, Honor; Mob kills; Resources (ores and bonus boxes from your pilot log) |
+| **Leaderboard** | Ranking, Competitive, Events, Clans, Gates; faction and rank icons; pilot search on Ranking |
+| **Settings** | Connection status, Retry, optional auto-start with Space Aces |
+| **Session** | Start sets baseline; Uri session can go negative after shop spend; Pause pauses tracking; Reset Hud clears session counters |
 
-Tracked stats: **Uridium**, **EP (XP)**, **Credits**, **Honor**.
+Tracked stats: **Uridium**, **EP (XP)**, **Credits**, **Honor**, **Level**.
 
 ### Overlay quick guide
 
 - **Click logo:** show or hide stats
 - **Hold logo:** drag overlay
 - **Right-click logo:** Start, Pause, Dashboard, Check for Updates, Exit
-- **Logo color:** blue = idle, green = running, orange = paused, red = scan or error
+- **Logo color:** blue = idle, green = running, orange = paused, red = connection error
 - Configure visible rows under **Overlay** in the sidebar
 
 ## Demo
 
-[![Watch qTracker on YouTube](https://img.youtube.com/vi/Adqg2KXiF1w/hqdefault.jpg)](https://www.youtube.com/watch?v=Adqg2KXiF1w)
-
-Short walkthrough: calibration, dashboard, overlay, and session tracking.
-
-## HUD layout (Space Aces)
-
-| Left column | Right column |
-|-------------|--------------|
-| XP | Credits |
-| Level | Uridium |
-| Honor | Jackpot |
-| Booty Keys | |
-
-Numbers use German thousands separators (e.g. `1.678.182`).
+https://youtu.be/dFN2aiPsmNI
 
 ## Requirements
 
 - Windows 10 or 11 (64-bit)
-- Space Aces visible on screen (windowed or borderless recommended)
-- HUD stats readable at your resolution and UI scale
+- Space Aces installed and logged in (token is read from local Space Aces storage)
 
 ## Data and privacy
 
 All config and history stay on your PC:
 
 `%APPDATA%\qTracker\`
-
-- `config.json` - calibration and settings
-- `history.jsonl` / `sessions.json` - analytics data
-- `debug/` - OCR debug snapshots (only when debug mode is on)
-
-Nothing is uploaded to Qinaii Labs or third parties.
+See **Privacy** in the app for policy and terms.
 
 ## Troubleshooting
 
 | Problem | Try this |
 |---------|----------|
-| Wrong or `n/a` readings | Recalibrate with a tighter box around icon + full number |
-| EP/Credits cut off | Widen the ROI to the right |
-| Unstable OCR | See OCR tips in Settings; adjust game HUD background |
-| Spike in Uridium | qTracker filters bad OCR jumps; shop spending is tracked as negative session Uri |
-| Analytics empty | Calibrate Uridium, EP, Credits, and Honor first |
-| Tesseract error (dev build only) | Release build includes Tesseract; use the GitHub release EXE |
+| Status **Error** | Start Space Aces, log in, then **Retry** in Settings |
+| Stats stay `n/a` | Wait a few seconds after login; confirm you are on a valid server session |
+| Overlay missing | **Overlay** tab → **Activate Overlay**; check Windows focus / multi-monitor |
+| Analytics empty | Play with tracking running; charts fill from history and pilot log sync |
+| Second window warning | Only one qTracker instance is allowed |
 
 ## Support
 
@@ -108,5 +83,3 @@ Nothing is uploaded to Qinaii Labs or third parties.
 ## License
 
 Distributed as a free binary release. Source code is not public.
-
-See [CHANGELOG.md](CHANGELOG.md) for version history.
