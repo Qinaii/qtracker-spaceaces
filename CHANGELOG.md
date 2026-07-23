@@ -2,6 +2,46 @@
 
 Download builds from [Releases](https://github.com/Qinaii/qtracker-spaceaces/releases).
 
+## qTracker v1.0.0
+First stable release. Windows 10/11, portable EXE.
+
+> ### Tracking
+- Reads Uri, EP, Credits, Honor, and Level from the official Space Aces website API
+- **Screen OCR, Tesseract, and per-stat calibration are removed**
+- No ROI boxes, Scan All, or OCR tips
+- Session Start / Pause / Reset Hud; Uri session stays net vs. Start (can go negative after shop spend)
+- Rates keep the last known value when a poll briefly fails
+>### Dashboard
+- Account card: pilot name, level (EXP tooltip), rank / rank points, ship preview
+- Live values, session deltas, Uri/h, farming goal with ETA
+- Engine controls: Start, Pause, Reset Hud
+>### Overlay
+- Redesigned HUD panel with per-stat icons
+- Hex logo; blue idle, green running, orange paused, red on error
+- Panel height shrinks when overlay rows are turned off
+- Click logo to collapse; hold to drag; right-click menu
+- Overlay tab for toggles and auto-start
+>### Analytics
+- Charts for Uri, EP, Credits, Honor (daily / weekly / monthly)
+- Mob kills from the pilot logbook (with ship icons where available)
+- Resources: ores and bonus boxes from the pilot log
+>### Leaderboard
+- Ranking, Competitive, Events, Clans, and Gates boards on demand
+- Faction and rank icons
+- Pilot search on Ranking boards
+>### Settings
+- Connection status: System ready or Error, with Retry
+- Optional: Start qTracker when Space Aces launches (background watch, no console window)
+>### App
+- Single instance guard
+- Update check from GitHub Releases
+- Privacy page in the app
+- Data under `%APPDATA%\qTracker\`
+### Requirements
+- Space Aces running and logged in
+
+Download builds from [Releases](https://github.com/Qinaii/qtracker-spaceaces/releases).
+
 ## v0.0.5-alpha
 
 Pre-release update. Windows 10/11, portable EXE.
