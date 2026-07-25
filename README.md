@@ -1,6 +1,6 @@
 # qTracker - Space Aces
 
-HUD and session tracker for Space Aces. Reads your pilot stats from the **official Space Aces** while you play. No screen OCR, no memory access, no injection, no game files modified.
+HUD and session tracker for Space Aces. Reads your pilot stats from the **official Space Aces website API** while you play. No screen OCR, no memory access, no injection, no game files modified.
 
 Made by **[Qinaii Labs](https://qinaii.de)**
 
@@ -8,13 +8,13 @@ Made by **[Qinaii Labs](https://qinaii.de)**
 
 ## Download
 
-**[Latest release](https://github.com/Qinaii/qtracker-spaceaces/releases/latest)** · Windows 10/11 · `qtracker_v1.0.0.exe`
+**[Latest release](https://github.com/Qinaii/qtracker-spaceaces/releases/latest)** · Windows 10/11 · `qtracker_v1.0.1.exe`
 
 No Tesseract or extra OCR install. Space Aces must be running and logged in so qTracker can read your session token.
 
 ## Quick start
 
-1. Download and run `qtracker_v1.0.0.exe` from Releases
+1. Download and run `qtracker_v1.0.1.exe` from Releases
 2. Start **Space Aces** and log in
 3. Open **Dashboard** and click **Start** to begin session tracking
 4. Optional: open **Overlay** and click **Activate Overlay** for an always-on-top HUD
@@ -40,7 +40,7 @@ Tracked stats: **Uridium**, **EP (XP)**, **Credits**, **Honor**, **Level**.
 - **Click logo:** show or hide stats
 - **Hold logo:** drag overlay
 - **Right-click logo:** Start, Pause, Dashboard, Check for Updates, Exit
-- **Logo color:** blue = idle, green = running, orange = paused, red = connection error
+- **Logo color:** blue = idle, green = running, orange = paused, red = API or connection error
 - Configure visible rows under **Overlay** in the sidebar
 
 ## Demo
@@ -51,12 +51,21 @@ https://youtu.be/dFN2aiPsmNI
 
 - Windows 10 or 11 (64-bit)
 - Space Aces installed and logged in (token is read from local Space Aces storage)
+- Internet access for the Space Aces API
 
 ## Data and privacy
 
 All config and history stay on your PC:
 
 `%APPDATA%\qTracker\`
+
+- `config.json` - settings
+- `history.jsonl` / `sessions.json` - analytics
+- `faction_aliases.json` - local faction icon cache helpers
+- activity files for mob and resource history
+
+qTracker talks only to the Space Aces API with your local login token. Nothing is uploaded to Qinaii Labs.
+
 See **Privacy** in the app for policy and terms.
 
 ## Troubleshooting
