@@ -2,6 +2,32 @@
 
 Download builds from [Releases](https://github.com/Qinaii/qtracker-spaceaces/releases).
 
+## v1.0.1
+
+Patch release. Windows 10/11, portable EXE.
+
+### API reliability
+- Fixed silent API freeze after session errors (401 with unchanged token no longer loops without UI feedback)
+- Stale-poll watchdog while engine or overlay is active: HUD and status show connection issues when polls stop succeeding
+- Settings connection status reflects last successful API poll, not only a token on disk
+- Settings Retry runs a live probe request
+- Diagnostics log in Settings with copy-to-clipboard (no tokens in log)
+
+### Tracking
+- Uri shop spend no longer reduces session earned or Uri/h (wallet drop shifts session base)
+- Uri/h uses session average (pause excluded), not a rolling poll window
+
+### Analytics
+- Uri tab: spend summary for the active period (Today / Weekly / Monthly) from pilot log `item_purchased`
+- Summary stat cards use a 3-column layout
+- Removed Recent Sessions section from stat charts
+
+### App
+- Live UI language switch without restart (incl. Turkish)
+- Dev startup hints when PyQt6 is missing outside the project venv
+
+Download builds from [Releases](https://github.com/Qinaii/qtracker-spaceaces/releases).
+
 ## qTracker v1.0.0
 First stable release. Windows 10/11, portable EXE.
 
