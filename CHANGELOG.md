@@ -2,6 +2,31 @@
 
 Download builds from [Releases](https://github.com/Qinaii/qtracker-spaceaces/releases).
 
+## v2.0.1
+
+Full .NET 9 + WPF client (replaces the Python builds). Portable EXE for Windows 10/11.
+
+### Highlights
+- Dashboard, Overlay HUD (goal, toggles, logo menu), Analytics, Leaderboard, Pilot Lookup
+- Pirate Map status via Qinaii feed (open / energy / timer when available)
+- Custom window chrome and themed controls (no default Windows look)
+- Optional start with Space Aces, single instance, GitHub update check
+- Leaderboards and Pilot Lookup through Qinaii cache
+
+### Packaging
+- `qtracker_v2.0.1.exe` plus matching `.sha256` checksum asset
+- Builds may still be unsigned.
+
+## v1.0.2
+
+First public .NET packaging line (see tag assets / notes).
+
+## Earlier releases
+
+Python-era tags remain on older releases for history only.
+
+Download builds from [Releases](https://github.com/Qinaii/qtracker-spaceaces/releases).
+
 ## v1.0.1
 
 Patch release. Windows 10/11, portable EXE.
