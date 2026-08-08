@@ -6,16 +6,23 @@ Download builds from [Releases](https://github.com/Qinaii/qtracker-spaceaces/rel
 
 Full .NET 9 + WPF client (replaces the Python builds). Portable EXE for Windows 10/11.
 
-### Highlights
-- Dashboard, Overlay HUD (goal, toggles, logo menu), Analytics, Leaderboard, Pilot Lookup
-- Pirate Map status via Qinaii feed (open / energy / timer when available)
+### App
+- Dashboard with live session stats, Overlay HUD (goal, toggles, logo menu), Analytics (mobs / resources / Uri spend)
+- Leaderboard (Ranking, Events, Clans, Gates) and Pilot Lookup
+- Dailys Best: daily top gains by date
+- Faction Change: recent faction switches
+- Pirate Map: open / energy / timer when available
+- Global Chat: recent public chat from the world feed
 - Custom window chrome and themed controls (no default Windows look)
 - Optional start with Space Aces, single instance, GitHub update check
-- Leaderboards and Pilot Lookup through Qinaii cache
+
+### Data
+- Your own wallet, log, and rank still come from Space Aces with your local login session
+- Leaderboards, Pilot Lookup, Dailys Best, Faction Change, Pirate Map, and Global Chat go through Qinaii's own API server
 
 ### Packaging
 - `qtracker_v2.0.1.exe` plus matching `.sha256` checksum asset
-- Builds may still be unsigned.
+- Builds may still be unsigned; see AV notes in the README if SmartScreen warns
 
 ## v1.0.2
 
