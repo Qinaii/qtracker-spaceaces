@@ -2,6 +2,21 @@
 
 Download builds from [Releases](https://github.com/Qinaii/qtracker-spaceaces/releases).
 
+## v2.0.2
+
+Clan Battle Station tracker and notification toggles.
+
+### App
+- Clan Battle Station: live Free / occupied slots by map (Battle, home maps), clan tag and build timer
+- Under construction vs finished build shown separately when the world feed reports it
+- Added Notifications, select sound, adjust volume and enable or disable it
+- Notifications page split into General, Pirate Map, and CBS
+- Master enable plus per-category enable; each event can be turned on or off on its own
+- CBS toasts: build (who + map), spawn finished, destroyed (destroyer when known)
+- Pirate Map notification toggles moved into the Pirate Map segment
+
+Download builds from [Releases](https://github.com/Qinaii/qtracker-spaceaces/releases).
+
 ## v2.0.1
 
 Full .NET 9 + WPF client (replaces the Python builds). Portable EXE for Windows 10/11.
