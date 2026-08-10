@@ -8,7 +8,7 @@ Made by **[Qinaii Labs](https://qinaii.de)**
 
 ## Download
 
-**[Latest release](https://github.com/Qinaii/qtracker-spaceaces/releases/latest)** · Windows 10/11 · `qtracker_v1.0.1.exe`
+**[Latest release](https://github.com/Qinaii/qtracker-spaceaces/releases/latest)** · Windows 10/11 · `qtracker_v2.0.2.exe`
 
 No Tesseract or extra OCR install. Space Aces must be running and logged in so qTracker can read your session token.
 
