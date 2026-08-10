@@ -4,7 +4,7 @@ HUD and session tracker for Space Aces. Shows your pilot stats from the **offici
 
 Made by **[Qinaii Labs](https://qinaii.de)**
 
-Want to be up to date on any changes? join **[[ΛoR] Λge of Revenge](https://discord.gg/9wD5Tgxpr9)**
+Want to be up to date on any changes? join **[[ΛoR] Λge of Revenge](https://discord.gg/9wD5Tgxpr9)** Discord
 
 [![Releases](https://img.shields.io/github/v/release/Qinaii/qtracker-spaceaces?label=latest)](https://github.com/Qinaii/qtracker-spaceaces/releases)
 
