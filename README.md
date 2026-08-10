@@ -14,7 +14,7 @@ No Tesseract or extra OCR install. Space Aces must be running and logged in so q
 
 ## Quick start
 
-1. Download and run `qtracker_v1.0.1.exe` from Releases
+1. Download and run `qtracker_v2.0.2.exe` from Releases
 2. Start **Space Aces** and log in
 3. Open **Dashboard** and click **Start** to begin session tracking
 4. Optional: open **Overlay** and click **Activate Overlay** for an always-on-top HUD
