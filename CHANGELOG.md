@@ -2,6 +2,29 @@
 
 Download builds from [Releases](https://github.com/Qinaii/qtracker-spaceaces/releases).
 
+## v2.1.0
+
+Ace Gates, Ace Quests, and richer notifications.
+
+### App
+- Ace Gates: live gate progress, parts, average DMF, and finish rewards
+- Ace Quests: Active Quests, Ace Pass tasks, and All Quests with search
+- Quest cards show task progress, ship lock, target, and map when the game provides them
+- Notifications for Ace Quests: quest complete, optional rewards with icons, optional task complete on multi-task quests
+- Notification duration (5 to 30 seconds) under General
+- Notification sounds play again (Preview and Test included)
+- Sidebar links: Discord and Ko-fi next to Settings / About / Privacy
+
+### Data
+- Ace Gates and Ace Quests use your local Space Aces login session
+- Reward names use Space Aces item labels (LPC-11, PCC-25, and so on)
+
+### Packaging
+- `qtracker_v2.1.0.exe` plus matching `.sha256` checksum asset
+- Builds may still be unsigned
+
+Download builds from [Releases](https://github.com/Qinaii/qtracker-spaceaces/releases).
+
 ## v2.0.2
 
 Clan Battle Station tracker and notification toggles.
