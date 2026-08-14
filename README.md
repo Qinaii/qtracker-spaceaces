@@ -10,6 +10,8 @@ Made by **[Qinaii Labs](https://qinaii.de)**
 
 **[Latest release](https://github.com/Qinaii/qtracker-spaceaces/releases/latest)** · Windows 10/11 · `qtracker_v2.1.0.exe`
 
+![qTracker](assets/demo.gif)
+
 Log into Space Aces on this PC via the **Steam client** or a **browser** (Chrome, Edge, Brave, Firefox, Opera, …). Each release includes a `qtracker_vX.Y.Z.sha256` checksum file. Compare it to the file you downloaded before running.
 
 ## Quick start
@@ -61,8 +63,6 @@ Tracked stats: **Dark Matter Fragment (DMF)**, **EP (XP)**, **Credits**, **Honor
 - Toasts appear top-center and are click-through (same idea as the HUD stats panel)
 - Preview sound and send a test toast from the Notifications page
 - Discord and Ko-fi are in the sidebar under Settings / About / Privacy
-
-![qTracker](assets/demo.gif)
 
 ## Requirements
 
