@@ -62,9 +62,7 @@ Tracked stats: **Dark Matter Fragment (DMF)**, **EP (XP)**, **Credits**, **Honor
 - Preview sound and send a test toast from the Notifications page
 - Discord and Ko-fi are in the sidebar under Settings / About / Privacy
 
-## Demo
-
-https://youtu.be/dFN2aiPsmNI
+![qTracker](assets/demo.gif)
 
 ## Requirements
 
