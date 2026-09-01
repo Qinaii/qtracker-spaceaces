@@ -8,7 +8,7 @@ Made by **[Qinaii Labs](https://qinaii.de)**
 
 ## Download
 
-**[Latest release](https://github.com/Qinaii/qtracker-spaceaces/releases/latest)** · Windows 10/11 · `qtracker_v2.1.0.exe`
+**[Latest release](https://github.com/Qinaii/qtracker-spaceaces/releases/latest)** · Windows 10/11 · `qtracker_v2.1.1.exe`
 
 ![qTracker](assets/demo.gif)
 
@@ -16,7 +16,7 @@ Log into Space Aces on this PC via the **Steam client** or a **browser** (Chrome
 
 ## Quick start
 
-1. Download and run `qtracker_v2.1.0.exe` from Releases
+1. Download and run `qtracker_v2.1.1.exe` from Releases
 2. Log into Space Aces on this PC (Steam client or browser)
 3. Open **Dashboard** and click **Start** to begin session tracking
 4. Optional: open **Overlay** and click **Activate Overlay** for an always-on-top HUD
