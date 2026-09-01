@@ -2,6 +2,26 @@
 
 Download builds from [Releases](https://github.com/Qinaii/qtracker-spaceaces/releases).
 
+## v2.1.1
+
+Saturn Expansion ready: new quests, Saturn maps, CBS destroy history.
+
+### App
+- Ace Quests includes the Saturn Expansion quests (Age of Saturn and the new chain)
+- Saturn maps show as S-1, S-2, and S-3 in quest tasks (no more raw Map 34 / 35 / 36)
+- Notifications: Saturn station system open, closing soon, and closed (Saturn segment next to Pirate Map)
+- Clan Battle Station now lists CBS Destroy History at the bottom (last 20 destroys: who, loser, station, map)
+
+### Data
+- Quest titles refreshed from current Space Aces English texts (542 titled quests)
+- Quests without an official title stay hidden in Active / All, same as before
+- Map IDs 34, 35, 36 labeled S-1, S-2, S-3 everywhere qTracker shows a map
+
+### Packaging
+- `qtracker_v2.1.1.exe` plus matching `.sha256` checksum asset
+
+Download builds from [Releases](https://github.com/Qinaii/qtracker-spaceaces/releases).
+
 ## v2.1.0
 
 Ace Gates, Ace Quests, and richer notifications.
